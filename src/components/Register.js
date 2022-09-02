@@ -15,8 +15,8 @@ const Register = () => {
   }
 
   return (
-    <div className="d-flex justify-content-end mt-3  padding-top:40px;">
-    <img width="700" height="600" src="https://media.istockphoto.com/photos/businessman-logging-on-to-a-password-protected-website-picture-id1325306868?b=1&k=20&m=1325306868&s=612x612&w=0&h=hz2oZ-CfI_orVAnv4JRMCGJH4xjqAanjSHdqIqUZLDw="/>
+    <div className="d-flex justify-content-end mt-3  padding-top:40px" style={{backgroundColor:"#e6e6ff", height:"700px"}}>
+    <img width="700" height="700" src="https://img.freepik.com/premium-vector/illustration-vector-graphic-cartoon-character-login_516790-1261.jpg?w=2000"/>
       <div className="left_data p-1" style={{ width: "100%" }}>
       <h1 className="text-center mb-2 font-weight:5"> CulturOFest </h1>
       <h3 className="text-center mb-3 mt-1"> Create an Account </h3>
@@ -24,24 +24,24 @@ const Register = () => {
 
           <Form>
             <Form.Group className="mb-3 text-center" controlId="formBasicEmail">
-              <Form.Control onChange={(event) => setName(event.target.value)} name="name" size="lg" placeholder="Enter your Name" />
+              <Form.Control onChange={(event) => setName(event.target.value)} name="name" size="lg" style={{boxShadow: "1px 1px 1px 0.5px #354052"}} placeholder="Enter your Name" />
             </Form.Group>
 
             <Form.Group className="mb-3">
-              <Form.Control onChange={(event) => setMobile(event.target.value)} name="mobile" size="lg"
+              <Form.Control onChange={(event) => setMobile(event.target.value)} name="mobile" size="lg" style={{boxShadow: "1px 1px 1px 0.5px #354052"}}
                 placeholder="Enter your Phone-No" />
             </Form.Group>
 
             <Form.Group className="mb-3">
-              <Form.Control onChange={(event) => setEmail(event.target.value)} size="lg" type="email" name="email" placeholder="Enter your Email-ID" />
+              <Form.Control onChange={(event) => setEmail(event.target.value)} size="lg" type="email" name="email" style={{boxShadow: "1px 1px 1px 0.5px #354052"}} placeholder="Enter your Email-ID" />
             </Form.Group>
 
             <Form.Group className="mb-3">
-              <Form.Control size="lg" onChange={(event) => setPassword(event.target.value)} type="password" name="password" placeholder="Password" />
+              <Form.Control size="lg" onChange={(event) => setPassword(event.target.value)} type="password" name="password" style={{boxShadow: "1px 1px 1px 0.5px #354052"}} placeholder="Password" />
             </Form.Group>
 
             <div className="d-grid gap-2"> 
-            <Button variant="primary" size="lg" type="submit" onClick={addData} >
+            <Button style={{boxShadow: "1px 1px 1px 0.5px #354052"}} variant="primary" size="lg" type="submit" onClick={addData} >
               SignUp
             </Button>
             </div>

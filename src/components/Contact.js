@@ -4,7 +4,7 @@ import { TextCenter } from 'react-bootstrap-icons'
 
 function Contact() {
   return (
-    <div className="jumbotron jumbotron-fluid " style={{ paddingTop: '300px', boxSizing: 'content-box', content: 'TextCenter' }}>
+    <div className="jumbotron jumbotron-fluid " style={{backgroundColor:"#e6e6ff", height:"700px", paddingTop: '300px', boxSizing: 'content-box', content: 'TextCenter' }}>
       <div className='textalign-center'>
         <h1 className="display-4 text-center"> Feel free to contact us!</h1>
         <h1 className="text-xl-center"> CulturOFest </h1>

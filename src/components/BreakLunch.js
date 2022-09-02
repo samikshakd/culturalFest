@@ -28,7 +28,6 @@ function BreakLunch() {
         </Card.Text>
         <Button variant="primary" onClick={() => navigate("/register")}>Go somewhere</Button>
       </Card.Body>
-     
     </Card>
     <Card>
       <Card.Img style={{height:'40rem'}} src="https://images.pexels.com/photos/13041629/pexels-photo-13041629.jpeg?auto=compress&cs=tinysrgb&w=600" />

@@ -7,8 +7,8 @@ import festivalregisteration from "./FestivalRegistration";
 function Diwali() {
   const navigate = useNavigate();
   return (
-    <div>
-      <Card  className="container" style={{ paddingTop: '150px', boxSizing: 'content-box', content: 'TextCenter'}}>
+    <div style={{backgroundColor:"#e6e6ff", height:"700px"}}>
+    <Card className="container" style={{boxShadow: "1px 1px 1px 0.5px #354052" , top:"20%", boxSizing: 'content-box' }}>
         <Card.Header> Coming Soon </Card.Header>
         <Card.Body>
           <Card.Title> Diwali </Card.Title>

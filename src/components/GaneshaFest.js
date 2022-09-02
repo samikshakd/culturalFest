@@ -8,7 +8,7 @@ import festivalregisteration from "./FestivalRegistration";
 function GaneshaFest() {
   const navigate = useNavigate();
   return (
-    <div style={{backgroundColor:"#fff2e6", height:"700px"}}>
+    <div style={{backgroundColor:"#e6e6ff", height:"700px"}}>
       <Card className="container" style={{boxShadow: "1px 1px 1px 0.5px #354052" , top:"20%", boxSizing: 'content-box' }}>
         <Card.Header>Featured</Card.Header>
         <Card.Body>

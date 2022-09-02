@@ -17,6 +17,8 @@ import BreakLunch from "./components/BreakLunch";
 import FestivalRegisteration from "./components/FestivalRegistration";
 import Footer from "./components/Footer";
 import "font-awesome/css/font-awesome.min.css";
+import ganeshafest from "./components/GaneshaFest"
+import Explore from "./components/Explore";
 
 
 class App extends Component {
@@ -37,6 +39,8 @@ class App extends Component {
             <Route path="/diwali" element={<Diwali/>}/>
             <Route path="/breaklunch" element={<BreakLunch/>} />
             <Route path="/festivalregistration" element={<FestivalRegisteration/>} />
+            <Route path="/ganeshafest" element={<GaneshaFest/>} />
+            <Route path="/explore" element={<Explore/>} />
           </Routes>
           <Footer/>
         </BrowserRouter>
