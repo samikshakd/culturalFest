@@ -1,21 +1,26 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import "./SignIn.css";
+import { useNavigate } from "react-router-dom";
+
 
 const Register = () => {
+  const navigate = useNavigate();
   const [name, setName] = useState("");
   const [mobile, setMobile] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  
+
   const addData = (event) => {
     event.preventDefault();
     console.log(name, mobile, email, password)
+    navigate("/signin")
   }
 
   return (
-    <div className="d-flex justify-content-end mt-3  padding-top:40px" style={{backgroundColor:"#e6e6ff", height:"700px"}}>
+    <div className="d-flex justify-content-end padding-top:30px" style={{backgroundColor:"#e6f5ff", height:"800px"}}>
     <img width="700" height="700" src="https://img.freepik.com/premium-vector/illustration-vector-graphic-cartoon-character-login_516790-1261.jpg?w=2000"/>
       <div className="left_data p-1" style={{ width: "100%" }}>
       <h1 className="text-center mb-2 font-weight:5"> CulturOFest </h1>
@@ -41,14 +46,13 @@ const Register = () => {
             </Form.Group>
 
             <div className="d-grid gap-2"> 
-            <Button style={{boxShadow: "1px 1px 1px 0.5px #354052"}} variant="primary" size="lg" type="submit" onClick={addData} >
+            <Button style={{boxShadow: "1px 1px 1px 0.5px #354052"}} variant="primary" size="lg" type="submit" onClick={addData } >
               SignUp
             </Button>
             </div>
             </Form>
             <p className="mb-3"> Already have an account?<span> <a href="/signin"> Login  </a></span></p>
           </div>
-       
       </div>
     );
   };

@@ -1,15 +1,14 @@
 import React from 'react'
 import { TextCenter } from 'react-bootstrap-icons'
 
-
 function Contact() {
   return (
-    <div className="jumbotron jumbotron-fluid " style={{backgroundColor:"#e6e6ff", height:"700px", paddingTop: '300px', boxSizing: 'content-box', content: 'TextCenter' }}>
+    <div className="jumbotron jumbotron-fluid " style={{backgroundColor:"#e6e6ff", height:"400px", paddingTop: '200px', boxSizing: 'content-box', content: 'TextCenter' }}>
       <div className='textalign-center'>
         <h1 className="display-4 text-center"> Feel free to contact us!</h1>
         <h1 className="text-xl-center"> CulturOFest </h1>
         <div className="container1 text-xl-center">
-          <p>A blog to explore, learn, and share Electro Funk, Soul, & Hip Hop Music</p>
+          <p>Collect movements,not things!</p>
 
           <div id="social" className="col-md-12 inline text-center">
             <span id="twitter" className="display: inline-block" style={{ paddingTop: '20px' }} >

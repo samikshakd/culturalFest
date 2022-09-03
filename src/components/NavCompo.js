@@ -7,14 +7,13 @@ const NavCompo = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <Navbar bg="light" expand="sm" variant="light">
-        <Container>
-          <Navbar.Brand href="/"> CulturOFest </Navbar.Brand>
-
+      <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
+      <div className="container-fluid mx-5">
+          <Navbar.Brand href="/"><i class="fa fa-ravelry" aria-hidden="true"/> CulturOFest </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
             <Nav className="mr-auto">
-              <NavDropdown title="Events" id="basic-nav-dropdown">
+              <NavDropdown className="item-hover" title="Events" id="basic-nav-dropdown">
                 <NavDropdown.Item href="/ganeshafest">
                   Ganesha Chaturthi
                 </NavDropdown.Item>
@@ -25,21 +24,21 @@ const NavCompo = () => {
                   Breakfast/Lunch
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link onClick={() => navigate("/contact")}>
+              <Nav.Link className="item-hover" onClick={() => navigate("/contact")}>
                 Contact Us
               </Nav.Link>
-              <Button className="button" onClick={() => navigate("/signin")}>
+              <Nav.Link className="item-hover"  onClick={() => navigate("/signin")}>
               Login
-            </Button>
-            <Button className="button" onClick={() => navigate("/register")}>
+            </Nav.Link>
+            <Nav.Link className="item-hover"  onClick={() => navigate("/register")}>
             SignUp
-          </Button>
+          </Nav.Link>
             </Nav>
           </Navbar.Collapse>
-        </Container>
+          </div>
       </Navbar>
     </div>
   );
-};
+}
 
-export default NavCompo;
+export default NavCompo

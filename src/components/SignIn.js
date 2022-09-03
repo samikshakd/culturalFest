@@ -1,14 +1,13 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import "./SignIn.css";
 import { useNavigate } from "react-router-dom";
 
 function SignIn() {
   const navigate = useNavigate();
   return (
    
-      <div className="d-flex justify-content-end mt-1"style={{backgroundColor:"#e6e6ff", height:"700px"}}>
+      <div className="d-flex justify-content-end "style={{backgroundColor:"#e6f5ff", height:"800px"}}>
       <img width="1500"  height="615" src="https://img.freepik.com/premium-vector/illustration-vector-graphic-cartoon-character-login_516790-1261.jpg?w=2000"/>
         <div className="left_data p-3" style={{ width: "100%" }}>
         <h1 className="text-center mb-2 font-weight:5"> CulturOFest </h1>

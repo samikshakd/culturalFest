@@ -3,7 +3,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <div className="footer fixed-bottom">
+    <div className="footer fixed-bottom mt-5" >
       <div className="text-center">
         Copyright © 2022 <a href="http://localhost:3000/">CulturOFest</a>
       </div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import "./SignIn.css";
+import { useNavigate } from "react-router-dom";
 
 const FestivalRegisteration = () => {
   const [userid, setuserid] = useState("");
@@ -13,6 +13,7 @@ const FestivalRegisteration = () => {
   const [totalAmount, settotalAmount] = useState("");
   const [paymentMode, setpaymentMode] = useState("");
 
+  const navigate = useNavigate();
   const addFestivalRegistration = (event) => {
     event.preventDefault();
     console.log(
@@ -25,11 +26,20 @@ const FestivalRegisteration = () => {
       totalAmount,
       paymentMode
     );
+    alert("successfully registered for an event!");
+    navigate("/");
   };
 
   return (
-    <div className="d-flex justify-content-end " style={{ backgroundColor: "#e6e6ff", height: "700px" }}>
-      <img width="1400" height="500" src="https://img.freepik.com/premium-vector/illustration-vector-graphic-cartoon-character-login_516790-1261.jpg?w=2000" />
+    <div
+      className="d-flex justify-content-end "
+      style={{ backgroundColor: "#e6f5ff", height: "800px" }}
+    >
+      <img
+        width="1400"
+        height="600"
+        src="https://img.freepik.com/premium-vector/illustration-vector-graphic-cartoon-character-login_516790-1261.jpg?w=2000"
+      />
       <div className="left_data p-1" style={{ width: "100%" }}>
         <div className="right_data" style={{ width: "100%" }}>
           <h3 className="mb-2 mt-10"> Festival Registeration </h3>
@@ -37,7 +47,8 @@ const FestivalRegisteration = () => {
             <Form.Group className="mb-3">
               <Form.Control
                 onChange={(event) => setuserid(event.target.value)}
-                name="userid" style={{ boxShadow: "1px 1px 1px 0.5px #354052" }}
+                name="userid"
+                style={{ boxShadow: "1px 1px 1px 0.5px #354052" }}
                 placeholder="Enter your User Id"
               />
             </Form.Group>
@@ -45,39 +56,51 @@ const FestivalRegisteration = () => {
             <Form.Group className="mb-3">
               <Form.Control
                 onChange={(event) => setfestivalid(event.target.value)}
-                name="festivalid" style={{ boxShadow: "1px 1px 1px 0.5px #354052" }}
+                name="festivalid"
+                style={{ boxShadow: "1px 1px 1px 0.5px #354052" }}
                 placeholder="Enter your Festival Id"
               />
             </Form.Group>
 
             <Form.Group className="mb-3">
-              <Form.Control
-                onChange={(event) => setnoofpeople(event.target.value)}
-                name="noofpeople" style={{ boxShadow: "1px 1px 1px 0.5px #354052" }}
-                placeholder="Enter No of People"
-              />
+            <Form.Select value={noofpeople} onChange={(event) => setnoofpeople(event.target.value)}>
+            <option value=""> Select no of people </option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </Form.Select>
             </Form.Group>
 
             <Form.Group className="mb-3">
-              <Form.Control
-                onChange={(event) => setfoodmenu(event.target.value)}
-                name="foodMenu" style={{ boxShadow: "1px 1px 1px 0.5px #354052" }}
-                placeholder="Food Menu"
-              />
+              <Form.Select value={foodMenu} onChange={(event) => setfoodmenu(event.target.value)}>
+              <option value=""> Select food menu </option>  
+              <option value="grapefruit">Grapefruit</option>
+                <option value="lime">Lime</option>
+                <option value="coconut">Coconut</option>
+                <option value="mango">Mango</option>
+              </Form.Select>
             </Form.Group>
 
             <Form.Group className="mb-3">
-              <Form.Control
-                onChange={(event) => setfoodQuantity(event.target.value)}
-                name="foodQuantity" style={{ boxShadow: "1px 1px 1px 0.5px #354052" }}
-                placeholder="Enter Food Quantity"
-              />
+            <Form.Select value={foodQuantity} onChange={(event) => setfoodQuantity(event.target.value)}>
+            <option value=""> Select food quantity </option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </Form.Select>
             </Form.Group>
 
             <Form.Group className="mb-3 text-center">
               <Form.Control
                 onChange={(event) => setfoodprice(event.target.value)}
-                name="foodPrice" style={{ boxShadow: "1px 1px 1px 0.5px #354052" }}
+                name="foodPrice"
+                style={{ boxShadow: "1px 1px 1px 0.5px #354052" }}
                 placeholder="Enter FoodPrice"
               />
             </Form.Group>
@@ -85,7 +108,8 @@ const FestivalRegisteration = () => {
             <Form.Group className="mb-3 text-center">
               <Form.Control
                 onChange={(event) => settotalAmount(event.target.value)}
-                name="totalAmount" style={{ boxShadow: "1px 1px 1px 0.5px #354052" }}
+                name="totalAmount"
+                style={{ boxShadow: "1px 1px 1px 0.5px #354052" }}
                 placeholder="Enter TotalAmount"
               />
             </Form.Group>
@@ -93,23 +117,30 @@ const FestivalRegisteration = () => {
             <Form.Group className="mb-3 text-center">
               <Form.Control
                 onChange={(event) => setpaymentMode(event.target.value)}
-                name="paymentMode" style={{ boxShadow: "1px 1px 1px 0.5px #354052" }}
+                name="paymentMode"
+                style={{ boxShadow: "1px 1px 1px 0.5px #354052" }}
                 placeholder="Enter PaymentMode"
               />
             </Form.Group>
 
             <div style={{ display: "flex" }}>
-              <Button style={{ marginRight: "auto", boxShadow: "1px 1px 1px 0.5px #354052" }} onClick={addFestivalRegistration}>
+              <Button
+                style={{
+                  marginRight: "auto",
+                  boxShadow: "1px 1px 1px 0.5px #354052",
+                }}
+                onClick={addFestivalRegistration}
+              >
                 Confirm
               </Button>
+              <p>
+                Go to 
+                <span>
+                  <a href="/"> Home</a>
+                </span>
+              </p>
             </div>
           </Form>
-          <p className="mb-3">
-            Go to
-            <span>
-              <a href="/">Home</a>
-            </span>
-          </p>
         </div>
       </div>
     </div>
