@@ -9,8 +9,8 @@ function GaneshaFest() {
   const navigate = useNavigate();
   return (
     <div style={{backgroundColor:"#e6e6ff", height:"700px"}}>
-      <Card className="container" style={{boxShadow: "1px 1px 1px 0.5px #354052" , top:"15%", boxSizing: 'content-box' }}>
-        <Card.Header>Featured</Card.Header>
+      <Card className="container" style={{boxShadow: "1px 1px 1px 0.5px #354052" , top:"15%", boxSizing: 'content-box'}}>
+        <Card.Header style={{color:"#0080ff" , fontSize:"1.3rem"}}>Featured</Card.Header>
         <Card.Body>
           <Card.Title> Ganesh Chaturthi </Card.Title>
           <Card.Text>

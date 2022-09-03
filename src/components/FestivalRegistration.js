@@ -42,7 +42,7 @@ const FestivalRegisteration = () => {
       />
       <div className="left_data p-1" style={{ width: "100%" }}>
         <div className="right_data" style={{ width: "100%" }}>
-          <h3 className="mb-2 mt-10"> Festival Registeration </h3>
+          <h3 className="pt-3 mb-3 mt-10" style={{textAlign:"center"}}> Festival Registeration </h3>
           <Form>
             <Form.Group className="mb-3">
               <Form.Control
@@ -63,7 +63,7 @@ const FestivalRegisteration = () => {
             </Form.Group>
 
             <Form.Group className="mb-3">
-            <Form.Select value={noofpeople} onChange={(event) => setnoofpeople(event.target.value)}>
+            <Form.Select style={{ boxShadow: "1px 1px 1px 0.5px #354052" }} value={noofpeople} onChange={(event) => setnoofpeople(event.target.value)}>
             <option value=""> Select no of people </option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -75,7 +75,7 @@ const FestivalRegisteration = () => {
             </Form.Group>
 
             <Form.Group className="mb-3">
-              <Form.Select value={foodMenu} onChange={(event) => setfoodmenu(event.target.value)}>
+              <Form.Select style={{ boxShadow: "1px 1px 1px 0.5px #354052" }} value={foodMenu} onChange={(event) => setfoodmenu(event.target.value)}>
               <option value=""> Select food menu </option>  
               <option value="grapefruit">Grapefruit</option>
                 <option value="lime">Lime</option>
@@ -85,7 +85,7 @@ const FestivalRegisteration = () => {
             </Form.Group>
 
             <Form.Group className="mb-3">
-            <Form.Select value={foodQuantity} onChange={(event) => setfoodQuantity(event.target.value)}>
+            <Form.Select style={{ boxShadow: "1px 1px 1px 0.5px #354052" }} value={foodQuantity} onChange={(event) => setfoodQuantity(event.target.value)}>
             <option value=""> Select food quantity </option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -124,10 +124,10 @@ const FestivalRegisteration = () => {
             </Form.Group>
 
             <div style={{ display: "flex" }}>
-              <Button
-                style={{
+              <Button  variant="btn btn-outline-dark"
+                style={{  
                   marginRight: "auto",
-                  boxShadow: "1px 1px 1px 0.5px #354052",
+                  boxShadow: "1px 1px 1px 0.5px #354052"
                 }}
                 onClick={addFestivalRegistration}
               >

@@ -23,7 +23,7 @@ const Register = () => {
     <div className="d-flex justify-content-end padding-top:30px" style={{backgroundColor:"#e6f5ff", height:"800px"}}>
     <img width="700" height="700" src="https://img.freepik.com/premium-vector/illustration-vector-graphic-cartoon-character-login_516790-1261.jpg?w=2000"/>
       <div className="left_data p-1" style={{ width: "100%" }}>
-      <h1 className="text-center mb-2 font-weight:5"> CulturOFest </h1>
+      <h1 className="text-center mb-2 mt-5 font-weight:5" style={{fontFamily: "serif",color:"#000080"}}> CulturOFest </h1>
       <h3 className="text-center mb-3 mt-1"> Create an Account </h3>
       <h3 className="text-center mb-4 "> SignUp </h3> 
 
@@ -46,7 +46,7 @@ const Register = () => {
             </Form.Group>
 
             <div className="d-grid gap-2"> 
-            <Button style={{boxShadow: "1px 1px 1px 0.5px #354052"}} variant="primary" size="lg" type="submit" onClick={addData } >
+            <Button style={{boxShadow: "1px 1px 1px 0.5px #354052"}} variant="btn btn-outline-dark" size="lg" type="submit" onClick={addData } >
               SignUp
             </Button>
             </div>

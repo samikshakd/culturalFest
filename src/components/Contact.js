@@ -5,10 +5,10 @@ function Contact() {
   return (
     <div className="jumbotron jumbotron-fluid " style={{backgroundColor:"#e6e6ff", height:"400px", paddingTop: '200px', boxSizing: 'content-box', content: 'TextCenter' }}>
       <div className='textalign-center'>
-        <h1 className="display-4 text-center"> Feel free to contact us!</h1>
-        <h1 className="text-xl-center"> CulturOFest </h1>
+        <h1 className="display-4 text-center" style={{color:"#0000b3"}}> Feel free to contact us!</h1>
+        <h1 className="text-xl-center" style={{fontFamily: "serif",color:"#000080"}}> CulturOFest <i class="fa fa-ravelry" aria-hidden="true"/> </h1>
         <div className="container1 text-xl-center">
-          <p>Collect movements,not things!</p>
+          <p>Collect moments , not things!</p>
 
           <div id="social" className="col-md-12 inline text-center">
             <span id="twitter" className="display: inline-block" style={{ paddingTop: '20px' }} >

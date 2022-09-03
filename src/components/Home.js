@@ -59,10 +59,7 @@ function Home() {
           </a>
         </p>
           <CardGroup
-            style={{ marginTop:"100px",
-             
-            }}
-          >
+            style={{ marginTop:"100px" }}>
             <Card className="mx-2" style={{ boxShadow: "1px 1px 1px 0.5px #354052", width: "90rem", height: "37rem" }}>
               <Card.Img onClick={()=> navigate("/ganeshafest")} 
                 style={{ height: "25rem" }}
@@ -78,7 +75,7 @@ function Home() {
               </Card.Body>
             </Card>
             <Card className="mx-2" style={{ boxShadow: "1px 1px 1px 0.5px #354052", width: "90rem", height: "37rem" }}>
-              <Card.Img
+              <Card.Img onClick={()=> navigate("/navratri")} 
                 style={{ height: "25rem" }}
                 src="https://images.unsplash.com/photo-1602772576751-f90059b6a8ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGV2aSUyMGR1cmdhfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
               />
@@ -92,7 +89,7 @@ function Home() {
               </Card.Body>
             </Card>
             <Card className="mx-2" style={{ boxShadow: "1px 1px 1px 0.5px #354052", width: "90rem", height: "37rem" }}>
-              <Card.Img
+              <Card.Img onClick={()=> navigate("/diwali")} 
                 style={{ height: "25rem" }}
                 src="https://images.unsplash.com/photo-1541955208104-805851060644?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGRpd2FsaSUyMGxpZ2h0c3xlbnwwfHwwfHw%3D&w=1000&q=80"
               />
